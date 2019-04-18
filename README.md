@@ -1,4 +1,4 @@
-# Iris Dataset Classifcation Machine Learning Program in Python
+# Iris Dataset Classifcation - Machine Learning Program in Python
 ## "Hello World" of the "Machine Learning" era :)
 
 **Load libraries**
