@@ -64,15 +64,18 @@ print(dataset.groupby('class').size())
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 pyplot.show()
 ```
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Bob%20%26%20Whisker.PNG)
 
 *histograms*
 ```
 dataset.hist()
 pyplot.show()
 ```
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Histogram.PNG)
 
 *scatter plot matrix*
 ```
 scatter_matrix(dataset)
 pyplot.show()
 ```
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Scatter%20Plot.PNG)
