@@ -1,7 +1,7 @@
 # Iris Dataset Classifcation Machine Learning Program in Python
 ## "Hello World" of the Machine Learning Era :)
 
-`Load libraries`
+**Load libraries**
 
 ```
 from pandas import read_csv
@@ -21,7 +21,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 ```
 
-`Load dataset`
+**Load dataset**
 
 ```
 filename = 'iris.data.csv'
@@ -30,23 +30,43 @@ dataset = read_csv(filename, names=names)
 ```
 > NOTE : "dataset" is the table created for analysis.
 
-`Descriptive statistics`
+**Descriptive statistics**
 
-**shape**
+*shape*
 ```
 print(dataset.shape)
 ```
-> head
+*head*
 ```
 print(dataset.head(20))
 ```
-> descriptions
+*descriptions*
 ```
 print(dataset.describe())
 ```
-> class distribution
+*class distribution*
 ```
 print(dataset.groupby('class').size())
 ```
 > NOTE: class is the classification column (extreme right) in the dataset
 
+
+**Data visualizations**
+
+*box and whisker plots*
+```
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+pyplot.show()
+```
+
+*histograms*
+```
+dataset.hist()
+pyplot.show()
+```
+
+*scatter plot matrix*
+```
+scatter_matrix(dataset)
+pyplot.show()
+```
