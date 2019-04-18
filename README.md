@@ -32,14 +32,21 @@ dataset = read_csv(filename, names=names)
 
 `Descriptive statistics`
 
-```
 > shape
-print(dataset.shape)
-# head
-print(dataset.head(20))
-# descriptions
-print(dataset.describe())
-# class distribution
-print(dataset.groupby('class').size())
-# class is the classification column (extreme right) in the dataset
 ```
+print(dataset.shape)
+```
+> head
+```
+print(dataset.head(20))
+```
+> descriptions
+```
+print(dataset.describe())
+```
+> class distribution
+```
+print(dataset.groupby('class').size())
+```
+> NOTE: class is the classification column (extreme right) in the dataset
+
