@@ -1,5 +1,5 @@
 # Iris Dataset Classifcation Machine Learning Program in Python
-## "Hello World" of the Machine Learning :) - Iris data set ML classification program in Python
+## "Hello World" of the Machine Learning Era :)
 
 `Load libraries`
 
@@ -19,4 +19,12 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
+```
+
+`Load dataset`
+
+```
+filename = 'iris.data.csv'
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+dataset = read_csv(filename, names=names)
 ```
