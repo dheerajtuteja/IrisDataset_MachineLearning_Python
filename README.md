@@ -125,3 +125,33 @@ for name, model in models:
 	msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
 	print(msg)
 ```
+**Select the best Model**
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Model%20Output.PNG)
+
+**Comparison of Machine Learning algorithms**
+```
+fig = pyplot.figure()
+fig.suptitle('Algorithm Comparison')
+ax = fig.add_subplot(111)
+pyplot.boxplot(results)
+ax.set_xticklabels(names)
+pyplot.show()
+```
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Algorithm%20Comparison.PNG)
+
+**Make predictions on validation dataset**
+```
+knn = KNeighborsClassifier()
+knn.fit(X_train, Y_train)
+predictions = knn.predict(X_validation)
+print(accuracy_score(Y_validation, predictions))
+```
+> We can see that the accuracy is 0.9 or 90%.
+```
+print(confusion_matrix(Y_validation, predictions))
+```
+> The confusion matrix provides an indication of the three errors made.(2 + 1)
+```
+print(classification_report(Y_validation, predictions))
+```
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Output.PNG)
