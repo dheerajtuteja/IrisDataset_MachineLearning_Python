@@ -36,10 +36,14 @@ dataset = read_csv(filename, names=names)
 ```
 print(dataset.shape)
 ```
+> Output : (150,5)
+
 *head*
 ```
 print(dataset.head(20))
 ```
+![Screenshot](https://github.com/dheerajtuteja/tableau_UKBank/blob/master/Capture1.png)
+
 *descriptions*
 ```
 print(dataset.describe())
