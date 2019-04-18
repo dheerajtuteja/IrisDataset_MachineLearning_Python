@@ -79,3 +79,21 @@ scatter_matrix(dataset)
 pyplot.show()
 ```
 ![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Scatter%20Plot.PNG)
+
+**Evaluate Algorithms**
+
+*Split-out validation dataset*
+```
+array = dataset.values
+X = array[:,0:4]
+```
+> Independent variables in the dataset (X)
+```
+Y = array[:,4]
+```
+> Dependent variable in the dataset (Y)
+```
+validation_size = 0.20 # 80% Training vs 20% Test (Validation)
+seed = 7
+X_train, X_validation, Y_train, Y_validation = train_test_split(X, Y, test_size=validation_size, random_state=seed)
+```
