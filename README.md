@@ -28,12 +28,12 @@ filename = 'iris.data.csv'
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = read_csv(filename, names=names)
 ```
-### NOTE : "dataset" is the table created for analysis.
+> NOTE : "dataset" is the table created for analysis.
 
 `Descriptive statistics`
 
 ```
-# shape
+> shape
 print(dataset.shape)
 # head
 print(dataset.head(20))
