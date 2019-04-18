@@ -42,7 +42,7 @@ print(dataset.shape)
 ```
 print(dataset.head(20))
 ```
-![Screenshot](https://github.com/dheerajtuteja/tableau_UKBank/blob/master/Capture1.png)
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Dataset.PNG)
 
 *descriptions*
 ```
