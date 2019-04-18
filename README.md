@@ -32,7 +32,7 @@ dataset = read_csv(filename, names=names)
 
 `Descriptive statistics`
 
-> shape
+**shape**
 ```
 print(dataset.shape)
 ```
