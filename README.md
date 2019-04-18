@@ -1,5 +1,5 @@
 # Iris Dataset Classifcation Machine Learning Program in Python
-## "Hello World" of the Machine Learning Era :)
+## "Hello World" of the "Machine Learning" era :)
 
 **Load libraries**
 
@@ -48,12 +48,14 @@ print(dataset.head(20))
 ```
 print(dataset.describe())
 ```
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Description.PNG)
+
 *class distribution*
 ```
 print(dataset.groupby('class').size())
 ```
 > NOTE: class is the classification column (extreme right) in the dataset
-
+![Screenshot](https://github.com/dheerajtuteja/IrisDataset_MachineLearning_Python/blob/master/Class.PNG)
 
 **Data visualizations**
 
